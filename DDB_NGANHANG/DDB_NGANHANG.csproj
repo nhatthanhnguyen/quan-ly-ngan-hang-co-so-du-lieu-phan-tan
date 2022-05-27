@@ -1,0 +1,273 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9895B7CD-7AA6-4CBD-887C-51CD9BE393FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDB_NGANHANG</RootNamespace>
+    <AssemblyName>DDB_NGANHANG</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChuyenChiNhanhForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChuyenChiNhanhForm.Designer.cs">
+      <DependentUpon>ChuyenChiNhanhForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extension.cs" />
+    <Compile Include="DAO.cs" />
+    <Compile Include="DSNVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSNVForm.Designer.cs">
+      <DependentUpon>DSNVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGANHANGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienForm.Designer.cs">
+      <DependentUpon>NhanVienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDichForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDichForm.Designer.cs">
+      <DependentUpon>GiaoDichForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHangForm.Designer.cs">
+      <DependentUpon>KhachHangForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh.Designer.cs">
+      <DependentUpon>ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportLietKetKhachHangTheoTungChiNhanh.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportLietKetKhachHangTheoTungChiNhanh.Designer.cs">
+      <DependentUpon>ReportLietKetKhachHangTheoTungChiNhanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSaoKeGiaoDichTrongKhoangThoiGian.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportSaoKeGiaoDichTrongKhoangThoiGian.Designer.cs">
+      <DependentUpon>ReportSaoKeGiaoDichTrongKhoangThoiGian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="TaoSTKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoSTKForm.Designer.cs">
+      <DependentUpon>TaoSTKForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuuKhachHangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuKhachHangForm.Designer.cs">
+      <DependentUpon>TraCuuKhachHangForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChuyenChiNhanhForm.resx">
+      <DependentUpon>ChuyenChiNhanhForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSNVForm.resx">
+      <DependentUpon>DSNVForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienForm.resx">
+      <DependentUpon>NhanVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDichForm.resx">
+      <DependentUpon>GiaoDichForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHangForm.resx">
+      <DependentUpon>KhachHangForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh.resx">
+      <DependentUpon>ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportLietKetKhachHangTheoTungChiNhanh.resx">
+      <DependentUpon>ReportLietKetKhachHangTheoTungChiNhanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSaoKeGiaoDichTrongKhoangThoiGian.resx">
+      <DependentUpon>ReportSaoKeGiaoDichTrongKhoangThoiGian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoSTKForm.resx">
+      <DependentUpon>TaoSTKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuKhachHangForm.resx">
+      <DependentUpon>TraCuuKhachHangForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="NGANHANGDataSet.xsc">
+      <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NGANHANGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NGANHANGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NGANHANGDataSet.xss">
+      <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman-icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_businessman.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
